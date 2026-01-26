@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: #fff;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222 !important;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.f-info {
+  text-align: center;
+  height: 8rem;
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+
+.showA {
+  text-decoration: none;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.add-btn,
+.editbtn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.show-img {
+  height: 30vh;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+}
+.btns {
+  display: flex !important;
+}
+.show-card {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* map style */
+#map {
+  height: 400px;
+  width: 50vw;
+}
+
+.createNewMap {
+  display: none;
+}
+.container-fluid {
+  background-color: white;
+}
+.noListing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#filters {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+  }
+  .filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .filter p {
+    font-size: 0.8rem;
+  }
+  .tax-info {
+    display: none;
+  }
+  .tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .fa-solid,
+  .fa-brands {
+    color: #fe424d;
+  }
+  #filters {
+    display: flex;
+    overflow-x: auto; /* 👈 horizontal scroll */
+    white-space: nowrap; /* line break band */
+    scrollbar-width: none; /* Firefox me scrollbar hide */
+  }
+
+  #filters::-webkit-scrollbar {
+    display: none; /* Chrome me scrollbar hide */
+  }
+
+  .filter {
+    flex: 0 0 auto; 
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+  }
+  #filters {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+  }
+
+  /* css for scroll btn */
+  .filters-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .scroll-btn.left {
+    left: 0;
+  }
+
+  .scroll-btn.right {
+    right: 0;
+  }
+
+  #filters {
+    margin: 0 50px; /* buttons ke liye space */
+  }
