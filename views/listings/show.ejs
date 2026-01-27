@@ -126,6 +126,7 @@
           </p>
           <div class="card-text"><%= review.comment %></div>
         </div>
+        <% if(curruser && curruser._id.equals(listing.owner._id)){ %>
         <form
           class="mb-3"
           method="POST"
@@ -133,6 +134,7 @@
         >
           <button class="btn btn-sm btn-dark">Delete</button>
         </form>
+        <% } %>
       </div>
       <% } %>
     </div>
