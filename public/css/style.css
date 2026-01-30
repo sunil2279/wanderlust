@@ -197,5 +197,46 @@ body {
   }
 
   #filters {
-    margin: 0 50px; /* buttons ke liye space */
+    margin: 0 50px; 
+  }
+  .starability-slot{
+    transform: scale(0.9);
+    transform-origin: left center;
+  }
+  .starability-result{
+    transform: scale(0.5);
+    transform-origin: left center;
+  }
+  .review{
+    margin-top: 1rem;
+  }
+  @media only screen and (max-width : 576px){
+
+    .show-img{
+      height: 36vh;
+    }
+    .btn{
+      width: fit-content;
+    }
+    .listing-card{
+      margin-left: 1.5rem;
+      width: 90%;
+    }
+    #map{
+      width: 85vw;
+      border: 1px solid grey;
+    }
+    .mymap{
+      margin-left: 1.5rem;
+    }
+    .review{
+      margin-left: 1.5rem;
+      margin-top: 12px;
+    }
+    .addreview{
+      width: 100%;
+    }
+    .offset-3 {
+    margin-left: 5%;
+   }
   }
