@@ -239,4 +239,18 @@ body {
     .offset-3 {
     margin-left: 5%;
    }
+
+
+   .loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+   }
+   .inputBarContainer{
+    width: 60%;
+   }
   }
+
+
